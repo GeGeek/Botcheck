@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="fr">
+<!-- ACP -->
+<category name="wcf.acp.group">
+<item name="wcf.acp.group.option.admin.user.botcheck.canManageQuestions"><![CDATA[Peut gérer les questions]]></item>
+<item name="wcf.acp.group.option.category.admin.user.botcheck"><![CDATA[Vérification anti robots]]></item>
+</category>
+
+<category name="wcf.acp.menu">
+<item name="wcf.acp.menu.link.user.botcheck"><![CDATA[Vérification anti robots]]></item>
+<item name="wcf.acp.menu.link.user.botcheck.question.add"><![CDATA[Ajouter une question]]></item>
+<item name="wcf.acp.menu.link.user.botcheck.question.list"><![CDATA[Liste des questions]]></item>
+</category>
+
+<category name="wcf.acp.option">
+<item name="wcf.acp.option.botcheck_question_ignorecase"><![CDATA[Ignorer la case]]></item>
+<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[La capitalisation sera ignorée lors de la validation de la réponse.]]></item>
+<item name="wcf.acp.option.botcheck_question_ignorewhitespaces"><![CDATA[Ignorer les caractères “invisibles”]]></item>
+<item name="wcf.acp.option.botcheck_question_ignorewhitespaces.description"><![CDATA[Tout ce qui est “invisible”, comme les espaces et les tabulations seront ignorés lors de la validation de la réponse. (Inactif pour les questions avec des expressions régulières activées pour les réponses.)]]></item>
+<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[Nouvelle question sur mauvaise réponse]]></item>
+<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[Si une question est mal répondue, une nouvelle question sera utilisée à la place.]]></item>
+<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Vérification anti robots]]></item>
+<item name="wcf.acp.option.category.security.botcheck.registration"><![CDATA[Inscription]]></item>
+<item name="wcf.acp.option.module_user_botcheck"><![CDATA[Questions Botcheck]]></item>
+<item name="wcf.acp.option.module_user_botcheck.description"><![CDATA[Poser des questions prédéfinies lors de l'inscription pour prévenir de l'inscription des bots.]]></item>
+</category>
+
+<category name="wcf.acp.botcheck">
+<item name="wcf.acp.botcheck.question.add"><![CDATA[Ajouter une question]]></item>
+<item name="wcf.acp.botcheck.question.answers"><![CDATA[Réponses]]></item>
+<item name="wcf.acp.botcheck.question.answers.description"><![CDATA[Une réponse par ligne.]]></item>
+<item name="wcf.acp.botcheck.question.delete.sure"><![CDATA[Voulez-vous vraiment supprimer la question “{$question}”?]]></item>
+<item name="wcf.acp.botcheck.question.edit"><![CDATA[Editer la question]]></item>
+<item name="wcf.acp.botcheck.question.list"><![CDATA[Questions]]></item>
+<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[Il n'y a encore aucune question.]]></item>
+<item name="wcf.acp.botcheck.question.question"><![CDATA[Question]]></item>
+<item name="wcf.acp.botcheck.question.regex"><![CDATA[Interpréter les réponses comme des expressions régulières]]></item>
+<item name="wcf.acp.botcheck.question.regex.description"><![CDATA[En activant cette option, les lignes de réponse seront traitées comme <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://en.wikipedia.org/wiki/Regular_expression"|rawurlencode}" class="externalURL">des expression régulières</a>. Voir la <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://www.php.net/manual/en/reference.pcre.pattern.syntax.php"|rawurlencode}" class="externalURL">documentation PHP PCRE</a> pour plus d'informations concernant la syntax. <strong>Utiliser cela uniquement si vous savez ce que vous faites.</strong>]]></item>
+</category>
+
+<!-- USER -->
+<category name="wcf.botcheck.register">
+<item name="wcf.botcheck.register.answer"><![CDATA[Réponse]]></item>
+<item name="wcf.botcheck.register.answer.error.false"><![CDATA[Veuillez entrer la réponse correcte.]]></item>
+<item name="wcf.botcheck.register.description"><![CDATA[Veuillez répondre à la question suivante.]]></item>
+<item name="wcf.botcheck.register.question"><![CDATA[Question]]></item>
+<item name="wcf.botcheck.register.title"><![CDATA[Vérification anti robots]]></item>
+</category>
+</language>
